@@ -30,6 +30,9 @@ func q_visible():
 	
 func gm_visible():
 	$Characters.gm_visible()
+	
+func life_report_visible():
+	$AnimationPlayer.play("initial_life_docu")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
