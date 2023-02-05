@@ -7,7 +7,6 @@ script = ExtResource( 1 )
 resource_version = 20
 syntax_version = 2
 raw_text = "~ job_description
-
 do h_visible()
 H: Fair enough. So, [PN], boot up the console and let’s get started.
 do h_visible()
@@ -136,105 +135,32 @@ do h_visible()
 "
 errors = [  ]
 titles = {
-"ending": "53",
-"job_description": "2",
-"q1_help1": "8",
-"q1_help2": "14",
-"q3_help1": "20",
-"q3_help2": "33",
-"q4_help1": "43"
+"ending": "52",
+"job_description": "1",
+"q1_help1": "7",
+"q1_help2": "13",
+"q3_help1": "19",
+"q3_help2": "32",
+"q4_help1": "42"
 }
 lines = {
 "0": {
-"next_id": "2",
+"next_id": "1",
 "text": "job_description",
 "type": "title"
 },
+"1": {
+"mutation": {
+"expression": [ {
+"function": "h_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "2",
+"type": "mutation"
+},
 "10": {
-"mutation": {
-"expression": [ {
-"function": "h_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "11",
-"type": "mutation"
-},
-"101": {
-"mutation": {
-"expression": [ {
-"function": "q_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "102",
-"type": "mutation"
-},
-"102": {
-"character": "Q",
-"character_replacements": [  ],
-"next_id": "103",
-"replacements": [  ],
-"text": "I do love strawberries, Grandma. Um… I guess I’ll see you tomorrow.",
-"translation_key": "I do love strawberries, Grandma. Um… I guess I’ll see you tomorrow.",
-"type": "dialogue"
-},
-"103": {
-"mutation": {
-"expression": [ {
-"function": "q_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "105",
-"type": "mutation"
-},
-"105": {
-"mutation": {
-"expression": [ {
-"function": "gm_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "106",
-"type": "mutation"
-},
-"106": {
-"character": "Grandma",
-"character_replacements": [  ],
-"next_id": "107",
-"replacements": [  ],
-"text": "That’s wonderful!",
-"translation_key": "That’s wonderful!",
-"type": "dialogue"
-},
-"107": {
-"mutation": {
-"expression": [ {
-"function": "gm_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "109",
-"type": "mutation"
-},
-"109": {
-"mutation": {
-"expression": [ {
-"function": "h_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "110",
-"type": "mutation"
-},
-"11": {
 "mutation": {
 "expression": [ {
 "function": "console_next",
@@ -245,19 +171,103 @@ lines = {
 "next_id": "",
 "type": "mutation"
 },
-"110": {
+"100": {
+"mutation": {
+"expression": [ {
+"function": "q_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "101",
+"type": "mutation"
+},
+"101": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "102",
+"replacements": [  ],
+"text": "I do love strawberries, Grandma. Um… I guess I’ll see you tomorrow.",
+"translation_key": "I do love strawberries, Grandma. Um… I guess I’ll see you tomorrow.",
+"type": "dialogue"
+},
+"102": {
+"mutation": {
+"expression": [ {
+"function": "q_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "104",
+"type": "mutation"
+},
+"104": {
+"mutation": {
+"expression": [ {
+"function": "gm_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "105",
+"type": "mutation"
+},
+"105": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "106",
+"replacements": [  ],
+"text": "That’s wonderful!",
+"translation_key": "That’s wonderful!",
+"type": "dialogue"
+},
+"106": {
+"mutation": {
+"expression": [ {
+"function": "gm_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "108",
+"type": "mutation"
+},
+"108": {
+"mutation": {
+"expression": [ {
+"function": "h_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "109",
+"type": "mutation"
+},
+"109": {
 "character": "H",
 "character_replacements": [  ],
-"next_id": "111",
+"next_id": "110",
 "replacements": [  ],
 "text": "Hey Q’s Grandma, mind if a few of us come along as well?",
 "translation_key": "Hey Q’s Grandma, mind if a few of us come along as well?",
 "type": "dialogue"
 },
-"111": {
+"110": {
 "mutation": {
 "expression": [ {
 "function": "h_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "112",
+"type": "mutation"
+},
+"112": {
+"mutation": {
+"expression": [ {
+"function": "gm_visible",
 "type": "function",
 "value": [  ]
 } ]
@@ -266,6 +276,24 @@ lines = {
 "type": "mutation"
 },
 "113": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "114",
+"replacements": [  ],
+"text": "Oh if it isn’t H! Sure thing, the more the merrier. I am going to put on some good cooking. All the food you like!",
+"translation_key": "Oh if it isn’t H! Sure thing, the more the merrier. I am going to put on some good cooking. All the food you like!",
+"type": "dialogue"
+},
+"114": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "115",
+"replacements": [  ],
+"text": "See you tomorrow then! I’ll be waiting.",
+"translation_key": "See you tomorrow then! I’ll be waiting.",
+"type": "dialogue"
+},
+"115": {
 "mutation": {
 "expression": [ {
 "function": "gm_visible",
@@ -273,31 +301,13 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "114",
+"next_id": "117",
 "type": "mutation"
 },
-"114": {
-"character": "Grandma",
-"character_replacements": [  ],
-"next_id": "115",
-"replacements": [  ],
-"text": "Oh if it isn’t H! Sure thing, the more the merrier. I am going to put on some good cooking. All the food you like!",
-"translation_key": "Oh if it isn’t H! Sure thing, the more the merrier. I am going to put on some good cooking. All the food you like!",
-"type": "dialogue"
-},
-"115": {
-"character": "Grandma",
-"character_replacements": [  ],
-"next_id": "116",
-"replacements": [  ],
-"text": "See you tomorrow then! I’ll be waiting.",
-"translation_key": "See you tomorrow then! I’ll be waiting.",
-"type": "dialogue"
-},
-"116": {
+"117": {
 "mutation": {
 "expression": [ {
-"function": "gm_visible",
+"function": "q_visible",
 "type": "function",
 "value": [  ]
 } ]
@@ -306,6 +316,15 @@ lines = {
 "type": "mutation"
 },
 "118": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "119",
+"replacements": [  ],
+"text": "…",
+"translation_key": "…",
+"type": "dialogue"
+},
+"119": {
 "mutation": {
 "expression": [ {
 "function": "q_visible",
@@ -313,22 +332,18 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "119",
+"next_id": "121",
 "type": "mutation"
 },
-"119": {
-"character": "Q",
-"character_replacements": [  ],
-"next_id": "120",
-"replacements": [  ],
-"text": "…",
-"translation_key": "…",
-"type": "dialogue"
+"12": {
+"next_id": "13",
+"text": "q1_help2",
+"type": "title"
 },
-"120": {
+"121": {
 "mutation": {
 "expression": [ {
-"function": "q_visible",
+"function": "h_visible",
 "type": "function",
 "value": [  ]
 } ]
@@ -337,23 +352,21 @@ lines = {
 "type": "mutation"
 },
 "122": {
-"mutation": {
-"expression": [ {
-"function": "h_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
+"character": "H",
+"character_replacements": [  ],
 "next_id": "123",
-"type": "mutation"
+"replacements": [  ],
+"text": "[PN], you better get ready for Grandma Q’s cooking. It truly is amazing.",
+"translation_key": "[PN], you better get ready for Grandma Q’s cooking. It truly is amazing.",
+"type": "dialogue"
 },
 "123": {
 "character": "H",
 "character_replacements": [  ],
 "next_id": "124",
 "replacements": [  ],
-"text": "[PN], you better get ready for Grandma Q’s cooking. It truly is amazing.",
-"translation_key": "[PN], you better get ready for Grandma Q’s cooking. It truly is amazing.",
+"text": "And happy birthday, Q.",
+"translation_key": "And happy birthday, Q.",
 "type": "dialogue"
 },
 "124": {
@@ -361,20 +374,11 @@ lines = {
 "character_replacements": [  ],
 "next_id": "125",
 "replacements": [  ],
-"text": "And happy birthday, Q.",
-"translation_key": "And happy birthday, Q.",
-"type": "dialogue"
-},
-"125": {
-"character": "H",
-"character_replacements": [  ],
-"next_id": "126",
-"replacements": [  ],
 "text": "And thank you for playing this Game Jam submission!",
 "translation_key": "And thank you for playing this Game Jam submission!",
 "type": "dialogue"
 },
-"126": {
+"125": {
 "mutation": {
 "expression": [ {
 "function": "h_visible",
@@ -386,11 +390,6 @@ lines = {
 "type": "mutation"
 },
 "13": {
-"next_id": "14",
-"text": "q1_help2",
-"type": "title"
-},
-"14": {
 "mutation": {
 "expression": [ {
 "function": "h_visible",
@@ -398,19 +397,19 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "15",
+"next_id": "14",
 "type": "mutation"
 },
-"15": {
+"14": {
 "character": "H",
 "character_replacements": [  ],
-"next_id": "16",
+"next_id": "15",
 "replacements": [  ],
 "text": "This should be pretty easy. Skim through the report and find the answer.",
 "translation_key": "This should be pretty easy. Skim through the report and find the answer.",
 "type": "dialogue"
 },
-"16": {
+"15": {
 "mutation": {
 "expression": [ {
 "function": "h_visible",
@@ -418,10 +417,10 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "17",
+"next_id": "16",
 "type": "mutation"
 },
-"17": {
+"16": {
 "mutation": {
 "expression": [ {
 "function": "console_next",
@@ -432,23 +431,12 @@ lines = {
 "next_id": "",
 "type": "mutation"
 },
-"19": {
-"next_id": "20",
+"18": {
+"next_id": "19",
 "text": "q3_help1",
 "type": "title"
 },
-"2": {
-"mutation": {
-"expression": [ {
-"function": "h_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "3",
-"type": "mutation"
-},
-"20": {
+"19": {
 "mutation": {
 "expression": [ {
 "function": "q_visible",
@@ -456,16 +444,34 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "21",
+"next_id": "20",
 "type": "mutation"
+},
+"2": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "3",
+"replacements": [  ],
+"text": "Fair enough. So, [PN], boot up the console and let’s get started.",
+"translation_key": "Fair enough. So, [PN], boot up the console and let’s get started.",
+"type": "dialogue"
+},
+"20": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "21",
+"replacements": [  ],
+"text": "We know that she watered some flowers, but we don’t know what flowers they are…",
+"translation_key": "We know that she watered some flowers, but we don’t know what flowers they are…",
+"type": "dialogue"
 },
 "21": {
 "character": "Q",
 "character_replacements": [  ],
 "next_id": "22",
 "replacements": [  ],
-"text": "We know that she watered some flowers, but we don’t know what flowers they are…",
-"translation_key": "We know that she watered some flowers, but we don’t know what flowers they are…",
+"text": "No worries, you can investigate something further by highlighting parts of the document that you want our private investigators to look into.",
+"translation_key": "No worries, you can investigate something further by highlighting parts of the document that you want our private investigators to look into.",
 "type": "dialogue"
 },
 "22": {
@@ -473,20 +479,11 @@ lines = {
 "character_replacements": [  ],
 "next_id": "23",
 "replacements": [  ],
-"text": "No worries, you can investigate something further by highlighting parts of the document that you want our private investigators to look into.",
-"translation_key": "No worries, you can investigate something further by highlighting parts of the document that you want our private investigators to look into.",
-"type": "dialogue"
-},
-"23": {
-"character": "Q",
-"character_replacements": [  ],
-"next_id": "24",
-"replacements": [  ],
 "text": "Then click the phone icon at the bottom-right of the screen to start an investigation.",
 "translation_key": "Then click the phone icon at the bottom-right of the screen to start an investigation.",
 "type": "dialogue"
 },
-"24": {
+"23": {
 "mutation": {
 "expression": [ {
 "function": "q_visible",
@@ -494,13 +491,24 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "25",
+"next_id": "24",
 "type": "mutation"
 },
-"25": {
+"24": {
 "mutation": {
 "expression": [ {
 "function": "show_phone",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "26",
+"type": "mutation"
+},
+"26": {
+"mutation": {
+"expression": [ {
+"function": "h_visible",
 "type": "function",
 "value": [  ]
 } ]
@@ -509,26 +517,15 @@ lines = {
 "type": "mutation"
 },
 "27": {
-"mutation": {
-"expression": [ {
-"function": "h_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "28",
-"type": "mutation"
-},
-"28": {
 "character": "H",
 "character_replacements": [  ],
-"next_id": "29",
+"next_id": "28",
 "replacements": [  ],
 "text": "Our P.I.s will bring whatever information they can find on this matter.",
 "translation_key": "Our P.I.s will bring whatever information they can find on this matter.",
 "type": "dialogue"
 },
-"29": {
+"28": {
 "mutation": {
 "expression": [ {
 "function": "h_visible",
@@ -536,19 +533,10 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "30",
+"next_id": "29",
 "type": "mutation"
 },
-"3": {
-"character": "H",
-"character_replacements": [  ],
-"next_id": "4",
-"replacements": [  ],
-"text": "Fair enough. So, [PN], boot up the console and let’s get started.",
-"translation_key": "Fair enough. So, [PN], boot up the console and let’s get started.",
-"type": "dialogue"
-},
-"30": {
+"29": {
 "mutation": {
 "expression": [ {
 "function": "console_next",
@@ -559,12 +547,23 @@ lines = {
 "next_id": "",
 "type": "mutation"
 },
-"32": {
-"next_id": "33",
+"3": {
+"mutation": {
+"expression": [ {
+"function": "h_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "4",
+"type": "mutation"
+},
+"31": {
+"next_id": "32",
 "text": "q3_help2",
 "type": "title"
 },
-"33": {
+"32": {
 "mutation": {
 "expression": [ {
 "function": "q_visible",
@@ -572,19 +571,19 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "34",
+"next_id": "33",
 "type": "mutation"
 },
-"34": {
+"33": {
 "character": "Q",
 "character_replacements": [  ],
-"next_id": "35",
+"next_id": "34",
 "replacements": [  ],
 "text": "Now you have the picture of flowers, you can use the magnifying glass icon to do some research.",
 "translation_key": "Now you have the picture of flowers, you can use the magnifying glass icon to do some research.",
 "type": "dialogue"
 },
-"35": {
+"34": {
 "mutation": {
 "expression": [ {
 "function": "q_visible",
@@ -592,13 +591,24 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "36",
+"next_id": "35",
 "type": "mutation"
 },
-"36": {
+"35": {
 "mutation": {
 "expression": [ {
 "function": "show_magnifying_glass",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "37",
+"type": "mutation"
+},
+"37": {
+"mutation": {
+"expression": [ {
+"function": "h_visible",
 "type": "function",
 "value": [  ]
 } ]
@@ -607,37 +617,15 @@ lines = {
 "type": "mutation"
 },
 "38": {
-"mutation": {
-"expression": [ {
-"function": "h_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "39",
-"type": "mutation"
-},
-"39": {
 "character": "H",
 "character_replacements": [  ],
-"next_id": "40",
+"next_id": "39",
 "replacements": [  ],
 "text": "Click on the flowers after selecting the magnifying glass to quickly look up what they are.",
 "translation_key": "Click on the flowers after selecting the magnifying glass to quickly look up what they are.",
 "type": "dialogue"
 },
-"4": {
-"mutation": {
-"expression": [ {
-"function": "h_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "5",
-"type": "mutation"
-},
-"40": {
+"39": {
 "mutation": {
 "expression": [ {
 "function": "h_visible",
@@ -648,74 +636,7 @@ lines = {
 "next_id": "",
 "type": "mutation"
 },
-"42": {
-"next_id": "43",
-"text": "q4_help1",
-"type": "title"
-},
-"43": {
-"mutation": {
-"expression": [ {
-"function": "q_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "44",
-"type": "mutation"
-},
-"44": {
-"character": "Q",
-"character_replacements": [  ],
-"next_id": "45",
-"replacements": [  ],
-"text": "We are close! You can do it. Remember the things we have taught you.",
-"translation_key": "We are close! You can do it. Remember the things we have taught you.",
-"type": "dialogue"
-},
-"45": {
-"mutation": {
-"expression": [ {
-"function": "q_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "47",
-"type": "mutation"
-},
-"47": {
-"mutation": {
-"expression": [ {
-"function": "h_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "48",
-"type": "mutation"
-},
-"48": {
-"character": "H",
-"character_replacements": [  ],
-"next_id": "49",
-"replacements": [  ],
-"text": "And especially the things I’ve taught you.",
-"translation_key": "And especially the things I’ve taught you.",
-"type": "dialogue"
-},
-"49": {
-"mutation": {
-"expression": [ {
-"function": "h_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "50",
-"type": "mutation"
-},
-"5": {
+"4": {
 "mutation": {
 "expression": [ {
 "function": "console_start",
@@ -726,7 +647,74 @@ lines = {
 "next_id": "",
 "type": "mutation"
 },
-"50": {
+"41": {
+"next_id": "42",
+"text": "q4_help1",
+"type": "title"
+},
+"42": {
+"mutation": {
+"expression": [ {
+"function": "q_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "43",
+"type": "mutation"
+},
+"43": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "44",
+"replacements": [  ],
+"text": "We are close! You can do it. Remember the things we have taught you.",
+"translation_key": "We are close! You can do it. Remember the things we have taught you.",
+"type": "dialogue"
+},
+"44": {
+"mutation": {
+"expression": [ {
+"function": "q_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "46",
+"type": "mutation"
+},
+"46": {
+"mutation": {
+"expression": [ {
+"function": "h_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "47",
+"type": "mutation"
+},
+"47": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "48",
+"replacements": [  ],
+"text": "And especially the things I’ve taught you.",
+"translation_key": "And especially the things I’ve taught you.",
+"type": "dialogue"
+},
+"48": {
+"mutation": {
+"expression": [ {
+"function": "h_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "49",
+"type": "mutation"
+},
+"49": {
 "mutation": {
 "expression": [ {
 "function": "console_next",
@@ -737,15 +725,26 @@ lines = {
 "next_id": "",
 "type": "mutation"
 },
-"52": {
-"next_id": "53",
+"51": {
+"next_id": "52",
 "text": "ending",
 "type": "title"
+},
+"52": {
+"mutation": {
+"expression": [ {
+"function": "console_shutdown",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "53",
+"type": "mutation"
 },
 "53": {
 "mutation": {
 "expression": [ {
-"function": "console_shutdown",
+"function": "q_visible",
 "type": "function",
 "value": [  ]
 } ]
@@ -754,23 +753,21 @@ lines = {
 "type": "mutation"
 },
 "54": {
-"mutation": {
-"expression": [ {
-"function": "q_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
+"character": "Q",
+"character_replacements": [  ],
 "next_id": "55",
-"type": "mutation"
+"replacements": [  ],
+"text": "Nice work, [PN]. I think you are ready for this job.",
+"translation_key": "Nice work, [PN]. I think you are ready for this job.",
+"type": "dialogue"
 },
 "55": {
 "character": "Q",
 "character_replacements": [  ],
 "next_id": "56",
 "replacements": [  ],
-"text": "Nice work, [PN]. I think you are ready for this job.",
-"translation_key": "Nice work, [PN]. I think you are ready for this job.",
+"text": "Kinda curious why she bought a cake though, and such a big and expensive one at that.",
+"translation_key": "Kinda curious why she bought a cake though, and such a big and expensive one at that.",
 "type": "dialogue"
 },
 "56": {
@@ -778,20 +775,11 @@ lines = {
 "character_replacements": [  ],
 "next_id": "57",
 "replacements": [  ],
-"text": "Kinda curious why she bought a cake though, and such a big and expensive one at that.",
-"translation_key": "Kinda curious why she bought a cake though, and such a big and expensive one at that.",
-"type": "dialogue"
-},
-"57": {
-"character": "Q",
-"character_replacements": [  ],
-"next_id": "58",
-"replacements": [  ],
 "text": "I do love strawberries though.",
 "translation_key": "I do love strawberries though.",
 "type": "dialogue"
 },
-"58": {
+"57": {
 "mutation": {
 "expression": [ {
 "function": "q_visible",
@@ -799,10 +787,10 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "60",
+"next_id": "59",
 "type": "mutation"
 },
-"60": {
+"59": {
 "mutation": {
 "expression": [ {
 "function": "h_visible",
@@ -810,22 +798,38 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "61",
+"next_id": "60",
 "type": "mutation"
 },
-"61": {
+"6": {
+"next_id": "7",
+"text": "q1_help1",
+"type": "title"
+},
+"60": {
 "character": "H",
 "character_replacements": [  ],
-"next_id": "62",
+"next_id": "61",
 "replacements": [  ],
 "text": "Oh Q…",
 "translation_key": "Oh Q…",
 "type": "dialogue"
 },
-"62": {
+"61": {
 "mutation": {
 "expression": [ {
 "function": "h_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "63",
+"type": "mutation"
+},
+"63": {
+"mutation": {
+"expression": [ {
+"function": "q_visible",
 "type": "function",
 "value": [  ]
 } ]
@@ -834,23 +838,21 @@ lines = {
 "type": "mutation"
 },
 "64": {
-"mutation": {
-"expression": [ {
-"function": "q_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
+"character": "Q",
+"character_replacements": [  ],
 "next_id": "65",
-"type": "mutation"
+"replacements": [  ],
+"text": "What?",
+"translation_key": "What?",
+"type": "dialogue"
 },
 "65": {
 "character": "Q",
 "character_replacements": [  ],
 "next_id": "66",
 "replacements": [  ],
-"text": "What?",
-"translation_key": "What?",
+"text": "Hold on, a phone call.",
+"translation_key": "Hold on, a phone call.",
 "type": "dialogue"
 },
 "66": {
@@ -858,23 +860,25 @@ lines = {
 "character_replacements": [  ],
 "next_id": "67",
 "replacements": [  ],
-"text": "Hold on, a phone call.",
-"translation_key": "Hold on, a phone call.",
-"type": "dialogue"
-},
-"67": {
-"character": "Q",
-"character_replacements": [  ],
-"next_id": "68",
-"replacements": [  ],
 "text": "Hello?",
 "translation_key": "Hello?",
 "type": "dialogue"
 },
-"68": {
+"67": {
 "mutation": {
 "expression": [ {
 "function": "q_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "69",
+"type": "mutation"
+},
+"69": {
+"mutation": {
+"expression": [ {
+"function": "gm_visible",
 "type": "function",
 "value": [  ]
 } ]
@@ -883,11 +887,26 @@ lines = {
 "type": "mutation"
 },
 "7": {
+"mutation": {
+"expression": [ {
+"function": "h_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
 "next_id": "8",
-"text": "q1_help1",
-"type": "title"
+"type": "mutation"
 },
 "70": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "71",
+"replacements": [  ],
+"text": "Hey Q! Am I bothering you?",
+"translation_key": "Hey Q! Am I bothering you?",
+"type": "dialogue"
+},
+"71": {
 "mutation": {
 "expression": [ {
 "function": "gm_visible",
@@ -895,22 +914,13 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "71",
+"next_id": "73",
 "type": "mutation"
 },
-"71": {
-"character": "Grandma",
-"character_replacements": [  ],
-"next_id": "72",
-"replacements": [  ],
-"text": "Hey Q! Am I bothering you?",
-"translation_key": "Hey Q! Am I bothering you?",
-"type": "dialogue"
-},
-"72": {
+"73": {
 "mutation": {
 "expression": [ {
-"function": "gm_visible",
+"function": "q_visible",
 "type": "function",
 "value": [  ]
 } ]
@@ -919,6 +929,15 @@ lines = {
 "type": "mutation"
 },
 "74": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "75",
+"replacements": [  ],
+"text": "No grandma, I just wrapped up work for the day.",
+"translation_key": "No grandma, I just wrapped up work for the day.",
+"type": "dialogue"
+},
+"75": {
 "mutation": {
 "expression": [ {
 "function": "q_visible",
@@ -926,22 +945,13 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "75",
+"next_id": "77",
 "type": "mutation"
 },
-"75": {
-"character": "Q",
-"character_replacements": [  ],
-"next_id": "76",
-"replacements": [  ],
-"text": "No grandma, I just wrapped up work for the day.",
-"translation_key": "No grandma, I just wrapped up work for the day.",
-"type": "dialogue"
-},
-"76": {
+"77": {
 "mutation": {
 "expression": [ {
-"function": "q_visible",
+"function": "gm_visible",
 "type": "function",
 "value": [  ]
 } ]
@@ -950,49 +960,47 @@ lines = {
 "type": "mutation"
 },
 "78": {
-"mutation": {
-"expression": [ {
-"function": "gm_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
+"character": "Grandma",
+"character_replacements": [  ],
 "next_id": "79",
-"type": "mutation"
+"replacements": [  ],
+"text": "That’s great. Just asking if you have any time tomorrow to swing by.",
+"translation_key": "That’s great. Just asking if you have any time tomorrow to swing by.",
+"type": "dialogue"
 },
 "79": {
 "character": "Grandma",
 "character_replacements": [  ],
 "next_id": "80",
 "replacements": [  ],
-"text": "That’s great. Just asking if you have any time tomorrow to swing by.",
-"translation_key": "That’s great. Just asking if you have any time tomorrow to swing by.",
-"type": "dialogue"
-},
-"8": {
-"mutation": {
-"expression": [ {
-"function": "h_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "9",
-"type": "mutation"
-},
-"80": {
-"character": "Grandma",
-"character_replacements": [  ],
-"next_id": "81",
-"replacements": [  ],
 "text": "I know you are busy and all, and you even managed to fix my computer despite all that.",
 "translation_key": "I know you are busy and all, and you even managed to fix my computer despite all that.",
 "type": "dialogue"
 },
-"81": {
+"8": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "9",
+"replacements": [  ],
+"text": "Here you input “y” to tell the computer that you forgot the password.",
+"translation_key": "Here you input “y” to tell the computer that you forgot the password.",
+"type": "dialogue"
+},
+"80": {
 "mutation": {
 "expression": [ {
 "function": "gm_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "82",
+"type": "mutation"
+},
+"82": {
+"mutation": {
+"expression": [ {
+"function": "q_visible",
 "type": "function",
 "value": [  ]
 } ]
@@ -1001,6 +1009,15 @@ lines = {
 "type": "mutation"
 },
 "83": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "84",
+"replacements": [  ],
+"text": "Well you see…",
+"translation_key": "Well you see…",
+"type": "dialogue"
+},
+"84": {
 "mutation": {
 "expression": [ {
 "function": "q_visible",
@@ -1008,22 +1025,13 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "84",
+"next_id": "86",
 "type": "mutation"
 },
-"84": {
-"character": "Q",
-"character_replacements": [  ],
-"next_id": "85",
-"replacements": [  ],
-"text": "Well you see…",
-"translation_key": "Well you see…",
-"type": "dialogue"
-},
-"85": {
+"86": {
 "mutation": {
 "expression": [ {
-"function": "q_visible",
+"function": "gm_visible",
 "type": "function",
 "value": [  ]
 } ]
@@ -1032,6 +1040,15 @@ lines = {
 "type": "mutation"
 },
 "87": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "88",
+"replacements": [  ],
+"text": "And it’s your birthday tomorrow! I thought we could celebrate it together.",
+"translation_key": "And it’s your birthday tomorrow! I thought we could celebrate it together.",
+"type": "dialogue"
+},
+"88": {
 "mutation": {
 "expression": [ {
 "function": "gm_visible",
@@ -1039,22 +1056,24 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "88",
+"next_id": "90",
 "type": "mutation"
 },
-"88": {
-"character": "Grandma",
-"character_replacements": [  ],
-"next_id": "89",
-"replacements": [  ],
-"text": "And it’s your birthday tomorrow! I thought we could celebrate it together.",
-"translation_key": "And it’s your birthday tomorrow! I thought we could celebrate it together.",
-"type": "dialogue"
-},
-"89": {
+"9": {
 "mutation": {
 "expression": [ {
-"function": "gm_visible",
+"function": "h_visible",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "10",
+"type": "mutation"
+},
+"90": {
+"mutation": {
+"expression": [ {
+"function": "q_visible",
 "type": "function",
 "value": [  ]
 } ]
@@ -1062,16 +1081,16 @@ lines = {
 "next_id": "91",
 "type": "mutation"
 },
-"9": {
-"character": "H",
+"91": {
+"character": "Q",
 "character_replacements": [  ],
-"next_id": "10",
+"next_id": "92",
 "replacements": [  ],
-"text": "Here you input “y” to tell the computer that you forgot the password.",
-"translation_key": "Here you input “y” to tell the computer that you forgot the password.",
+"text": "I've been so busy that I forgot that my birthday is tomorrow…",
+"translation_key": "I've been so busy that I forgot that my birthday is tomorrow…",
 "type": "dialogue"
 },
-"91": {
+"92": {
 "mutation": {
 "expression": [ {
 "function": "q_visible",
@@ -1079,22 +1098,13 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "92",
+"next_id": "94",
 "type": "mutation"
 },
-"92": {
-"character": "Q",
-"character_replacements": [  ],
-"next_id": "93",
-"replacements": [  ],
-"text": "I've been so busy that I forgot that my birthday is tomorrow…",
-"translation_key": "I've been so busy that I forgot that my birthday is tomorrow…",
-"type": "dialogue"
-},
-"93": {
+"94": {
 "mutation": {
 "expression": [ {
-"function": "q_visible",
+"function": "gm_visible",
 "type": "function",
 "value": [  ]
 } ]
@@ -1103,23 +1113,21 @@ lines = {
 "type": "mutation"
 },
 "95": {
-"mutation": {
-"expression": [ {
-"function": "gm_visible",
-"type": "function",
-"value": [  ]
-} ]
-},
+"character": "Grandma",
+"character_replacements": [  ],
 "next_id": "96",
-"type": "mutation"
+"replacements": [  ],
+"text": "It’s fine if you don’t make it. I know you are so busy nowadays, but it’s sad to see this cake go to waste.",
+"translation_key": "It’s fine if you don’t make it. I know you are so busy nowadays, but it’s sad to see this cake go to waste.",
+"type": "dialogue"
 },
 "96": {
 "character": "Grandma",
 "character_replacements": [  ],
 "next_id": "97",
 "replacements": [  ],
-"text": "It’s fine if you don’t make it. I know you are so busy nowadays, but it’s sad to see this cake go to waste.",
-"translation_key": "It’s fine if you don’t make it. I know you are so busy nowadays, but it’s sad to see this cake go to waste.",
+"text": "You see, it was on sale for senior’s discount Wednesdays at Sole Foods.",
+"translation_key": "You see, it was on sale for senior’s discount Wednesdays at Sole Foods.",
 "type": "dialogue"
 },
 "97": {
@@ -1127,20 +1135,11 @@ lines = {
 "character_replacements": [  ],
 "next_id": "98",
 "replacements": [  ],
-"text": "You see, it was on sale for senior’s discount Wednesdays at Sole Foods.",
-"translation_key": "You see, it was on sale for senior’s discount Wednesdays at Sole Foods.",
-"type": "dialogue"
-},
-"98": {
-"character": "Grandma",
-"character_replacements": [  ],
-"next_id": "99",
-"replacements": [  ],
 "text": "I know you love strawberries and all, so I bought it right away without much thinking.",
 "translation_key": "I know you love strawberries and all, so I bought it right away without much thinking.",
 "type": "dialogue"
 },
-"99": {
+"98": {
 "mutation": {
 "expression": [ {
 "function": "gm_visible",
@@ -1148,7 +1147,7 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "101",
+"next_id": "100",
 "type": "mutation"
 }
 }

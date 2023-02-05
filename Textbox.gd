@@ -37,6 +37,18 @@ func _process(delta):
 				$Tween.remove_all()
 				change_state(State.FINISHED)
 		State.FINISHED:
+			print("test")
+			print(text_queue)
+			if len(text_queue) == 8:
+				print("somehow length was 8...")
+			elif len(text_queue) == 7:
+				print("text was too long, first edition")
+				console_next()
+			elif len(text_queue) == 6:
+				print("text was too long, first edition")
+				console_next()
+			else:
+				print("passed")
 			pass
 
 func queue_text(next_text):
@@ -62,9 +74,6 @@ func change_state(next_state):
 
 func _on_Tween_tween_completed(object, key):
 	change_state(State.FINISHED)
-	print("test")
-	print(text_queue)
-	console_finished()
 
 func console_start():
 	current_state = State.READY
