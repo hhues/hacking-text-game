@@ -13,6 +13,8 @@ func _ready():
 	$Characters.h_visible()
 	$Characters.q_visible()
 	$Characters.gm_visible()
+	# $Phone.visible = false
+	# $MagnifyingGlass.visible = false
 
 func show_dialogue(title: String, local_resource: DialogueResource = null, extra_game_states: Array = []) -> void:
 	var dialogue_line = yield(DialogueManager.get_next_dialogue_line(title, local_resource, extra_game_states), "completed")
@@ -33,7 +35,15 @@ func gm_visible():
 	
 func life_report_visible():
 	$AnimationPlayer.play("initial_life_docu")
+	
+func show_phone():
+	$Phone.visible = true
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func show_magnifying_glass():
+	$MagnifyingGlass.visible = true
+
+func _on_MagnifyingGlass_pressed():
+	$Flowers.change_flowers()
+
+func _on_Phone_pressed():
+	print("test2")

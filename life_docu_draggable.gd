@@ -1,5 +1,5 @@
 extends Node2D
-
+var flower_w_text = preload("res://assets/flowers-with-labels.png")
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -17,7 +17,6 @@ func _ready():
 
 
 func _on_Area2D_input_event(viewport, event, shape_idx):
-	print("test")
 	if Input.is_action_just_pressed("click"):
 		selected = true
 
@@ -31,3 +30,6 @@ func _input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == BUTTON_MIDDLE and not event.pressed:
 			selected = false
+
+func change_flowers():
+	$Picture.texture = flower_w_text
