@@ -28,6 +28,22 @@ func show_dialogue(title: String, local_resource: DialogueResource = null, extra
 func next_dialogue():
 	if dialogue_index == 1:
 		show_dialogue("q1-help1", dialogue)
+		dialogue_index += 1
+	elif dialogue_index == 2:
+		show_dialogue("q1-help2", dialogue)
+		dialogue_index += 1
+	elif dialogue_index == 3:
+		show_dialogue("q3_help1", dialogue)
+		dialogue_index += 1
+	elif dialogue_index == 4:
+		show_dialogue("q3_help2", dialogue)
+		dialogue_index += 1
+	elif dialogue_index == 5:
+		show_dialogue("q4_help1", dialogue)
+		dialogue_index += 1
+	elif dialogue_index == 6:
+		show_dialogue("ending", dialogue)
+		dialogue_index += 1
 	
 
 func h_visible():
