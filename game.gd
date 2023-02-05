@@ -138,4 +138,4 @@ func _on_Phone_pressed():
 	if dialogue_index == 4:
 		flowers_visible()
 	if dialogue_index == 6:
-		purchase_visible()		
+		purchase_visible()
