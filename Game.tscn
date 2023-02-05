@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/desk.png" type="Texture" id=1]
 [ext_resource path="res://game.gd" type="Script" id=2]
@@ -11,6 +11,36 @@
 [ext_resource path="res://Background.gd" type="Script" id=9]
 [ext_resource path="res://LifeDocu.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Textbox.gd" type="Script" id=11]
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("LifeDocu:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1223, 1629 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "initial_life_docu"
+tracks/0/type = "value"
+tracks/0/path = NodePath("LifeDocu:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 0.965935, 23.4254 ),
+"update": 0,
+"values": [ Vector2( 1223, 1629 ), Vector2( 1223, 615 ) ]
+}
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
@@ -36,8 +66,12 @@ font_data = SubResource( 5 )
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
 
-[node name="LifeDocu" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1328, 666 )
+[node name="LifeDocu" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1223, 1629 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 3 )
+anims/initial_life_docu = SubResource( 4 )
 
 [node name="Characters" type="Control" parent="."]
 margin_top = 161.0
