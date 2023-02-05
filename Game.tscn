@@ -22,23 +22,18 @@ anchor_bottom = 1.0
 margin_right = 768.0
 custom_styles/panel = SubResource( 1 )
 
-[node name="MarginContainer" type="MarginContainer" parent="Background"]
+[node name="Rows" type="VBoxContainer" parent="Background"]
 margin_right = 768.0
 margin_bottom = 1080.0
-custom_constants/margin_right = 5
-custom_constants/margin_top = 5
-custom_constants/margin_left = 5
-custom_constants/margin_bottom = 5
 
-[node name="Rows" type="VBoxContainer" parent="Background/MarginContainer"]
-margin_left = 5.0
-margin_top = 5.0
-margin_right = 763.0
-margin_bottom = 1075.0
-
-[node name="GameInfo" type="PanelContainer" parent="Background/MarginContainer/Rows"]
-margin_right = 758.0
+[node name="Title" type="PanelContainer" parent="Background/Rows"]
+margin_right = 768.0
 margin_bottom = 14.0
+
+[node name="TextEdit" type="TextEdit" parent="Background/Rows"]
+margin_top = 18.0
+margin_right = 768.0
+margin_bottom = 18.0
 
 [node name="Desk" type="Node2D" parent="."]
 
