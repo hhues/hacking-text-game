@@ -8,9 +8,8 @@
 [ext_resource path="res://characters.gd" type="Script" id=6]
 [ext_resource path="res://fonts/defaultText.tres" type="DynamicFont" id=7]
 [ext_resource path="res://fonts/titleFont.tres" type="DynamicFont" id=8]
-[ext_resource path="res://Background.gd" type="Script" id=9]
-[ext_resource path="res://LifeDocu.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Textbox.gd" type="Script" id=11]
+[ext_resource path="res://LifeDocu.tscn" type="PackedScene" id=9]
+
 
 [sub_resource type="Animation" id=3]
 length = 0.001
@@ -47,21 +46,6 @@ bg_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
 
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 1, 1, 1, 1 )
-
-[sub_resource type="StyleBoxFlat" id=4]
-bg_color = Color( 0, 0, 0, 1 )
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color( 1, 1, 1, 1 )
-
-[sub_resource type="DynamicFontData" id=5]
-antialiased = false
-font_path = "res://Born2bSportyV10.ttf"
-
-[sub_resource type="DynamicFont" id=3]
-font_data = SubResource( 5 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
@@ -110,7 +94,6 @@ anchor_bottom = 1.0
 margin_right = 768.0
 margin_bottom = 1092.0
 custom_styles/panel = SubResource( 1 )
-script = ExtResource( 9 )
 
 [node name="Rows" type="VBoxContainer" parent="Background"]
 margin_right = 768.0
@@ -130,7 +113,7 @@ custom_fonts/font = ExtResource( 8 )
 text = "  Ultimate Hacking Terminal"
 valign = 1
 
-[node name="EditText" type="TextEdit" parent="Background/Rows"]
+[node name="TextEdit" type="TextEdit" parent="Background/Rows"]
 margin_top = 58.0
 margin_right = 768.0
 margin_bottom = 1092.0
@@ -165,72 +148,3 @@ text = "testing"
 syntax_highlighting = true
 override_selected_font_color = true
 
-[node name="Textbox" type="CanvasLayer" parent="Background/Rows"]
-script = ExtResource( 11 )
-
-[node name="TextboxContainer" type="MarginContainer" parent="Background/Rows/Textbox"]
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = -1022.0
-margin_right = -1199.0
-margin_bottom = -971.0
-
-[node name="Panel" type="Panel" parent="Background/Rows/Textbox/TextboxContainer"]
-margin_right = 721.0
-margin_bottom = 51.0
-custom_styles/panel = SubResource( 4 )
-
-[node name="MarginContainer" type="MarginContainer" parent="Background/Rows/Textbox/TextboxContainer"]
-margin_right = 721.0
-margin_bottom = 51.0
-custom_constants/margin_right = 8
-custom_constants/margin_top = 8
-custom_constants/margin_left = 8
-custom_constants/margin_bottom = 8
-
-[node name="Panel" type="Panel" parent="Background/Rows/Textbox/TextboxContainer/MarginContainer"]
-visible = false
-margin_left = 8.0
-margin_top = 8.0
-margin_right = 713.0
-margin_bottom = 43.0
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Background/Rows/Textbox/TextboxContainer/MarginContainer"]
-margin_left = 8.0
-margin_top = 8.0
-margin_right = 713.0
-margin_bottom = 43.0
-
-[node name="Start" type="Label" parent="Background/Rows/Textbox/TextboxContainer/MarginContainer/HBoxContainer"]
-margin_right = 7.0
-margin_bottom = 16.0
-rect_min_size = Vector2( 7, 0 )
-size_flags_vertical = 0
-custom_fonts/font = SubResource( 3 )
-text = "*"
-
-[node name="Label" type="Label" parent="Background/Rows/Textbox/TextboxContainer/MarginContainer/HBoxContainer"]
-margin_left = 11.0
-margin_right = 694.0
-margin_bottom = 35.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Placeholder text! The quick brown sddddd"
-autowrap = true
-clip_text = true
-
-[node name="End" type="Label" parent="Background/Rows/Textbox/TextboxContainer/MarginContainer/HBoxContainer"]
-margin_left = 698.0
-margin_top = 19.0
-margin_right = 705.0
-margin_bottom = 35.0
-rect_min_size = Vector2( 7, 0 )
-size_flags_vertical = 8
-custom_fonts/font = SubResource( 3 )
-text = "v"
-
-[node name="Tween" type="Tween" parent="Background/Rows/Textbox"]
-
-[connection signal="tween_completed" from="Background/Rows/Textbox/Tween" to="Background/Rows/Textbox" method="_on_Tween_tween_completed"]
