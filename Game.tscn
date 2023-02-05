@@ -10,6 +10,7 @@
 [ext_resource path="res://fonts/titleFont.tres" type="DynamicFont" id=8]
 [ext_resource path="res://LifeDocu.tscn" type="PackedScene" id=9]
 
+
 [sub_resource type="Animation" id=3]
 length = 0.001
 tracks/0/type = "value"
@@ -146,3 +147,4 @@ custom_fonts/font = ExtResource( 7 )
 text = "testing"
 syntax_highlighting = true
 override_selected_font_color = true
+
