@@ -25,7 +25,7 @@ func _ready() -> void:
 	balloon.hide()
 	
 	var viewport_size = balloon.get_viewport_rect().size
-	margin.rect_size.x = viewport_size.x * 0.9
+	margin.rect_size.x = viewport_size.x * 0.4
 	
 	character_label.visible = dialogue_line.character != ""
 	character_label.bbcode_text = dialogue_line.character

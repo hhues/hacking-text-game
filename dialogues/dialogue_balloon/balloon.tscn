@@ -29,10 +29,10 @@ layer = 128
 script = ExtResource( 1 )
 
 [node name="Balloon" type="NinePatchRect" parent="."]
-margin_left = 223.0
+margin_left = 122.0
 margin_top = 842.0
-margin_right = 991.0
-margin_bottom = 1016.0
+margin_right = 863.0
+margin_bottom = 1043.0
 focus_mode = 2
 mouse_filter = 0
 size_flags_horizontal = 3
@@ -57,15 +57,15 @@ custom_constants/margin_bottom = 20
 [node name="VBox" type="VBoxContainer" parent="Balloon/Margin"]
 margin_left = 30.0
 margin_top = 20.0
-margin_right = 738.0
-margin_bottom = 154.0
+margin_right = 711.0
+margin_bottom = 181.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 5
 
 [node name="Character" type="RichTextLabel" parent="Balloon/Margin/VBox"]
 modulate = Color( 1, 1, 1, 0.470588 )
-margin_right = 708.0
+margin_right = 681.0
 margin_bottom = 36.0
 rect_min_size = Vector2( 0, 30 )
 mouse_filter = 1
@@ -81,7 +81,7 @@ scroll_active = false
 
 [node name="Dialogue" parent="Balloon/Margin/VBox" instance=ExtResource( 7 )]
 margin_top = 41.0
-margin_right = 708.0
+margin_right = 681.0
 margin_bottom = 77.0
 rect_clip_content = false
 mouse_filter = 1
@@ -94,15 +94,15 @@ text = "This is a bunch of dialogue!"
 
 [node name="Responses" type="VBoxContainer" parent="Balloon/Margin/VBox"]
 margin_top = 82.0
-margin_right = 708.0
-margin_bottom = 84.0
+margin_right = 681.0
+margin_bottom = 111.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="ResponseTemplate" type="RichTextLabel" parent="Balloon/Margin/VBox"]
-margin_top = 89.0
-margin_right = 708.0
-margin_bottom = 134.0
+margin_top = 116.0
+margin_right = 681.0
+margin_bottom = 161.0
 rect_min_size = Vector2( 0, 45 )
 size_flags_horizontal = 3
 custom_colors/default_color = Color( 0, 0, 0, 1 )
