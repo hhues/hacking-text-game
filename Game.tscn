@@ -1,9 +1,12 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=2]
 
 [sub_resource type="StyleBoxFlat" id=1]
-bg_color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
+bg_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
 
 [node name="Game" type="Control"]
 anchor_right = 1.0
@@ -12,25 +15,31 @@ margin_top = 2.0
 margin_bottom = 2.0
 script = ExtResource( 2 )
 
-[node name="Background" type="PanelContainer" parent="."]
-anchor_bottom = 1.0
-margin_right = 768.0
-custom_styles/panel = SubResource( 1 )
-
-[node name="MarginContainer" type="MarginContainer" parent="Background"]
-margin_right = 768.0
-margin_bottom = 1080.0
-custom_constants/margin_right = 5
-custom_constants/margin_top = 5
-custom_constants/margin_left = 5
-custom_constants/margin_bottom = 5
-
-[node name="Rows" type="VBoxContainer" parent="Background/MarginContainer"]
-margin_left = 5.0
-margin_top = 5.0
-margin_right = 763.0
+[node name="Rows" type="VBoxContainer" parent="."]
+anchor_right = 0.2
+margin_right = 360.0
 margin_bottom = 1075.0
 
-[node name="GameInfo" type="PanelContainer" parent="Background/MarginContainer/Rows"]
-margin_right = 758.0
-margin_bottom = 14.0
+[node name="CommandPrompt" type="PanelContainer" parent="Rows"]
+margin_right = 744.0
+margin_bottom = 1047.0
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 1 )
+
+[node name="InputContainer" type="PanelContainer" parent="Rows"]
+margin_top = 1051.0
+margin_right = 744.0
+margin_bottom = 1075.0
+custom_styles/panel = SubResource( 2 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Rows/InputContainer"]
+margin_right = 744.0
+margin_bottom = 24.0
+
+[node name="TextEdit" type="TextEdit" parent="Rows/InputContainer/HBoxContainer"]
+margin_bottom = 24.0
+
+[node name="Input" type="LineEdit" parent="Rows/InputContainer/HBoxContainer"]
+margin_left = 4.0
+margin_right = 62.0
+margin_bottom = 24.0
