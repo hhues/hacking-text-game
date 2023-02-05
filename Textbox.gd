@@ -5,25 +5,28 @@ const CHAR_READ_RATE = 0.025
 onready var label = $TextboxContainer/MarginContainer/HBoxContainer/Label
 onready var textedit = $TextboxContainer/MarginContainer/HBoxContainer/TextEdit
 
+export (Array, String, MULTILINE) var text123
+
 enum State {
 	READY,
 	READING,
 	FINISHED
 }
 
-var current_state = State.READY
+var current_state = State.FINISHED
+
 var text_queue = []
+
+var current_line = 0
 
 func _ready():
 	print("Starting state: State.READY")
-	queue_text("Excuse me wanderer where can I find the bathroom?")
-	queue_text("Why do we not look like the others?")
-	queue_text("Because we are free assets from opengameart!")
-	queue_text("Thanks for watching!")
+	for current_line in 8:
+		queue_text(text123[current_line])
 
 func _process(delta):
 	var sizeOfLabel = label.rect_size.y
-	textedit.rect_position.y = -300 + sizeOfLabel
+	textedit.rect_position.y = -300 + sizeOfLabel*2
 	match current_state:
 		State.READY:
 			if !text_queue.empty():
@@ -34,10 +37,7 @@ func _process(delta):
 				$Tween.remove_all()
 				change_state(State.FINISHED)
 		State.FINISHED:
-			if Input.is_action_just_pressed("ui_accept"):
-				# change_state(State.READY)
-				sizeOfLabel = label.rect_size.y
-				textedit.rect_position.y = -300 + sizeOfLabel
+			pass
 
 func queue_text(next_text):
 	text_queue.push_back(next_text)
@@ -62,3 +62,44 @@ func change_state(next_state):
 
 func _on_Tween_tween_completed(object, key):
 	change_state(State.FINISHED)
+	print("test")
+	print(text_queue)
+	if len(text_queue) == 7:
+		console_next()
+	else:
+		console_finished()
+
+func console_start():
+	current_state = State.READY
+
+func console_input_check(answer):
+	$Node2D.console_input_check(answer)
+	
+func console_success():
+	print("user was correct")
+
+# calls the next lines of text for the console
+func console_next():
+	match current_state:
+		State.READY:
+			pass
+		State.READING:
+			pass
+		State.FINISHED:
+			change_state(State.READY)
+			pass
+
+# when the user gets a failure input
+func console_fail():
+	pass
+
+# when the console finishes its print that doesn't involve a user input
+func console_finished():
+	print("console finished")
+	$"../..".next_dialogue()
+
+
+# when the user beats the game
+func console_shutdown():
+	print("console shutdown")
+	current_state = State.FINISHED

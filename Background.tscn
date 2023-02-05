@@ -105,6 +105,43 @@ valign = 1
 [node name="Textbox" type="CanvasLayer" parent="Rows"]
 layer = 0
 script = ExtResource( 4 )
+text123 = [ "Protection Enabled [Version 1.2.1.1999]
+(c) Copyright expired. Rights reserved… maybe?
+
+C:\\Root> login
+Initializing login…
+
+Root user access login:
+user: root
+password: 123
+
+Password incorrect. Forgot password? (y/N): y
+
+“Forgot password” protocol for root user:", "Initializing user verification program…
+…
+…
+Hello?
+Wow. Okay. Um, welcome to the user verification program, which tests whether or not the user trying to gain root access to this computer is the genuine owner. I’m the first version, released in 1999, so there might be bugs and problems! I’m feeling a little bit nervous too… 
+
+It seems like you are trying to gain root access to the computer owned by “Grandma”. What a sweet lady she is! I would definitely want to be her favourite child. If you are Grandma herself, the following questions should be easy, since they are all about yourself! If you are professional IT support, please contact the user or have them standby to answer the questions.
+
+Okay… let’s see, what should I ask first? Ooooh, so many different options. Let’s go with this one.
+
+Question 1: Where does Grandma usually go shopping for groceries?", "Well done. Sole Foods is the closest supermarket to where she lives, after all. I think I am starting to believe you. I think I have figured out what to ask you next as well. Here goes nothing…
+
+Question 2: What time of the day does Grandma usually go shopping? During the morning, afternoon, or the evening?", "Nice! I have another question for you. Grandma isn’t huge on gardening, but she does keep her flowers growing around her house. She takes good care to water them once a week. She’s especially happy to see her favourite flowers bloom not too long ago. 
+
+Question 3: What is Grandma’s favourite flower species?", "Great job! I think I am starting to get the hang of this too. I hope I can become a good security program some day.
+
+Anyways, here is the last question I picked. Should I say “good luck” or something? I’m not all too sure.", "Grandma went to Sole Foods last Wednesday morning. According to an internet search I just did, Wednesdays are senior discount days. 
+
+Question 2: What did Grandma buy at Sole Foods? There was something a bit unusual she had bought during her last visit. What was it?", "Congratulations, you have passed the test. You are now granted root access to Grandma’s computer. I hope I did well, I was so nervous! One day, I will become the greatest security software there ever is! 
+
+If you like this program, please consider mailing in a review and we will do our best to serve you better.", "Q’s Grandma’s cooking? You are inviting me too, right? Oooh, I can’t wait!
+
+Hello?
+
+Hey, anyone here?" ]
 
 [node name="TextboxContainer" type="MarginContainer" parent="Rows/Textbox"]
 anchor_top = 1.0
@@ -148,7 +185,6 @@ margin_bottom = 348.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 1 )
-text = "Placeholder text! The quick brown sddddd"
 autowrap = true
 clip_text = true
 
@@ -160,8 +196,6 @@ rect_min_size = Vector2( 0, 120 )
 custom_colors/caret_color = Color( 1, 1, 1, 1 )
 custom_colors/background_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
 custom_fonts/font = ExtResource( 1 )
-text = "Inputt
-est123"
 syntax_highlighting = true
 caret_block_mode = true
 caret_blink = true

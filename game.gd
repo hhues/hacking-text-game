@@ -47,7 +47,7 @@ func q_checker(answer):
 # when the console initially boots up
 func console_start():
 	print("console start")
-
+	$Background.console_start()
 
 # console should call this function after receiving user input
 func console_input_check(answer):
@@ -85,10 +85,10 @@ func console_shutdown():
 
 func next_dialogue():
 	if dialogue_index == 1:
-		show_dialogue("q1-help1", dialogue)
+		show_dialogue("q1_help1", dialogue)
 		dialogue_index += 1
 	elif dialogue_index == 2:
-		show_dialogue("q1-help2", dialogue)
+		show_dialogue("q1_help2", dialogue)
 		dialogue_index += 1
 	elif dialogue_index == 3:
 		show_dialogue("q3_help1", dialogue)
