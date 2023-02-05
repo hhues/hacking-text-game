@@ -33,3 +33,8 @@ func _input(event):
 
 func change_flowers():
 	$Picture.texture = flower_w_text
+
+
+func highlighted_text():
+	var selected_text = $Sprite/TextEdit.get_selection_text()
+	return selected_text

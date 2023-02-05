@@ -13,8 +13,8 @@ func _ready():
 	$Characters.h_visible()
 	$Characters.q_visible()
 	$Characters.gm_visible()
-	# $Phone.visible = false
-	# $MagnifyingGlass.visible = false
+	$Phone.visible = false
+	$MagnifyingGlass.visible = false
 
 func show_dialogue(title: String, local_resource: DialogueResource = null, extra_game_states: Array = []) -> void:
 	var dialogue_line = yield(DialogueManager.get_next_dialogue_line(title, local_resource, extra_game_states), "completed")
@@ -46,4 +46,6 @@ func _on_MagnifyingGlass_pressed():
 	$Flowers.change_flowers()
 
 func _on_Phone_pressed():
-	print("test2")
+	var life_docu_highlighted = $LifeDocu.highlighted_text()
+	var purchases_highlighted = $FoodPurchases.highlighted_text()
+	print($LifeDocu.highlighted_text())
