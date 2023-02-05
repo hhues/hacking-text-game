@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://fonts/defaultText.tres" type="DynamicFont" id=1]
 [ext_resource path="res://fonts/titleFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Background.gd" type="Script" id=3]
 [ext_resource path="res://Textbox.gd" type="Script" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
@@ -23,6 +24,7 @@ anchor_bottom = 1.0
 margin_right = 768.0
 margin_bottom = -3.0
 custom_styles/panel = SubResource( 1 )
+script = ExtResource( 3 )
 
 [node name="Rows" type="VBoxContainer" parent="."]
 margin_right = 768.0
