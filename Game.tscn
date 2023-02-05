@@ -58,19 +58,19 @@ script = ExtResource( 6 )
 [node name="Q" type="Sprite" parent="Characters"]
 position = Vector2( 380, 658 )
 scale = Vector2( 0.528, 0.528 )
-z_index = 1
+z_index = 4
 texture = ExtResource( 4 )
 
 [node name="H" type="Sprite" parent="Characters"]
 position = Vector2( 393, 654 )
 scale = Vector2( 0.528, 0.528 )
-z_index = 1
+z_index = 4
 texture = ExtResource( 3 )
 
 [node name="Grandma" type="Sprite" parent="Characters"]
 position = Vector2( 353, 656 )
 scale = Vector2( 0.5285, 0.5285 )
-z_index = 1
+z_index = 4
 texture = ExtResource( 5 )
 
 [node name="Desk" type="Node2D" parent="."]

@@ -1,13 +1,22 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://fonts/defaultText.tres" type="DynamicFont" id=1]
 [ext_resource path="res://fonts/titleFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Textbox.gd" type="Script" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
 
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
 
 [node name="Background" type="PanelContainer"]
 anchor_bottom = 1.0
@@ -22,48 +31,125 @@ margin_bottom = 1077.0
 [node name="Title" type="PanelContainer" parent="Rows"]
 margin_right = 768.0
 margin_bottom = 54.0
+size_flags_horizontal = 3
 custom_styles/panel = SubResource( 2 )
 
-[node name="Label" type="Label" parent="Rows/Title"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Rows/Title"]
+margin_right = 768.0
+margin_bottom = 54.0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Rows/Title/HBoxContainer"]
+margin_right = 10.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 10, 30 )
+
+[node name="ColorRect" type="ColorRect" parent="Rows/Title/HBoxContainer/VBoxContainer2"]
+margin_right = 10.0
+margin_bottom = 9.0
+rect_min_size = Vector2( 0, 4 )
+size_flags_vertical = 3
+
+[node name="ColorRect2" type="ColorRect" parent="Rows/Title/HBoxContainer/VBoxContainer2"]
+margin_top = 13.0
+margin_right = 10.0
+margin_bottom = 41.0
+rect_min_size = Vector2( 0, 28 )
+
+[node name="ColorRect3" type="ColorRect" parent="Rows/Title/HBoxContainer/VBoxContainer2"]
+margin_top = 45.0
+margin_right = 10.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 0, 4 )
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Rows/Title/HBoxContainer"]
+margin_left = 14.0
+margin_right = 54.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 40, 30 )
+
+[node name="ColorRect" type="ColorRect" parent="Rows/Title/HBoxContainer/VBoxContainer"]
+margin_right = 40.0
+margin_bottom = 10.0
+rect_min_size = Vector2( 0, 4 )
+size_flags_vertical = 3
+
+[node name="ColorRect2" type="ColorRect" parent="Rows/Title/HBoxContainer/VBoxContainer"]
+margin_top = 14.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 26 )
+color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="Rows/Title/HBoxContainer/VBoxContainer"]
+margin_top = 44.0
+margin_right = 40.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 0, 4 )
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Rows/Title/HBoxContainer"]
+margin_left = 58.0
 margin_right = 768.0
 margin_bottom = 54.0
 rect_min_size = Vector2( 0, 54 )
+size_flags_horizontal = 3
+size_flags_vertical = 1
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 2 )
-text = "  Ultimate Hacking Terminal"
+text = " Ultimate Hacking Terminal"
 valign = 1
 
-[node name="TextEdit" type="TextEdit" parent="Rows"]
-margin_top = 58.0
-margin_right = 768.0
-margin_bottom = 1077.0
+[node name="Textbox" type="CanvasLayer" parent="Rows"]
+layer = 0
+script = ExtResource( 4 )
+
+[node name="TextboxContainer" type="MarginContainer" parent="Rows/Textbox"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -1022.0
+margin_right = -1152.0
+margin_bottom = -566.0
 size_flags_vertical = 3
-custom_colors/member_variable_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/code_folding_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/function_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/safe_line_number_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/symbol_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/caret_background_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/bookmark_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/selection_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/caret_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/breakpoint_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/font_color_selected = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/font_color = Color( 0.882353, 0.882353, 0.882353, 1 )
-custom_colors/line_number_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/completion_font_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/completion_scroll_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/background_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/number_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/completion_background_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/brace_mismatch_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/current_line_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/completion_selected_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/executing_line_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/mark_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/word_highlighted_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
-custom_colors/font_color_readonly = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
+
+[node name="Panel" type="Panel" parent="Rows/Textbox/TextboxContainer"]
+visible = false
+margin_right = 768.0
+margin_bottom = 456.0
+custom_styles/panel = SubResource( 4 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Rows/Textbox/TextboxContainer"]
+margin_right = 768.0
+margin_bottom = 456.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 4
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+
+[node name="Panel" type="Panel" parent="Rows/Textbox/TextboxContainer/MarginContainer"]
+visible = false
+margin_left = 8.0
+margin_top = 4.0
+margin_right = 760.0
+margin_bottom = 448.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Rows/Textbox/TextboxContainer/MarginContainer"]
+margin_left = 8.0
+margin_top = 4.0
+margin_right = 760.0
+margin_bottom = 448.0
+
+[node name="Label" type="Label" parent="Rows/Textbox/TextboxContainer/MarginContainer/HBoxContainer"]
+margin_right = 752.0
+margin_bottom = 444.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 custom_fonts/font = ExtResource( 1 )
-text = "testing"
-syntax_highlighting = true
-override_selected_font_color = true
+text = "Placeholder text! The quick brown sddddd"
+autowrap = true
+clip_text = true
+
+[node name="Tween" type="Tween" parent="Rows/Textbox"]
+
+[connection signal="tween_completed" from="Rows/Textbox/Tween" to="Rows/Textbox" method="_on_Tween_tween_completed"]

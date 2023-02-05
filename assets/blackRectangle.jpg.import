@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PersonB.png-dd7d9b79a99664fb509ef774e8616f4a.stex"
+path="res://.import/blackRectangle.jpg-3d311108766f0b661c7e3274e2330492.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PersonB.png"
-dest_files=[ "res://.import/PersonB.png-dd7d9b79a99664fb509ef774e8616f4a.stex" ]
+source_file="res://assets/blackRectangle.jpg"
+dest_files=[ "res://.import/blackRectangle.jpg-3d311108766f0b661c7e3274e2330492.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0

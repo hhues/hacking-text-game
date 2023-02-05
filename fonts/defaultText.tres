@@ -4,5 +4,5 @@
 
 [resource]
 resource_name = "defaultText"
-size = 32
+size = 26
 font_data = ExtResource( 1 )
