@@ -115,6 +115,12 @@ func gm_visible():
 	
 func life_report_visible():
 	$AnimationPlayer.play("initial_life_docu")
+
+func purchase_visible():
+	$AnimationPlayer.play("initial_receipt")
+
+func flowers_visible():
+	$AnimationPlayer.play("initial_flowers")
 	
 func show_phone():
 	$Phone.visible = true
@@ -129,4 +135,7 @@ func _on_MagnifyingGlass_pressed():
 func _on_Phone_pressed():
 	var life_docu_highlighted = $LifeDocu.highlighted_text()
 	var purchases_highlighted = $FoodPurchases.highlighted_text()
-	print($LifeDocu.highlighted_text())
+	if dialogue_index == 4:
+		flowers_visible()
+	if dialogue_index == 6:
+		purchase_visible()
