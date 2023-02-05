@@ -25,6 +25,11 @@ func show_dialogue(title: String, local_resource: DialogueResource = null, extra
 		get_tree().current_scene.add_child(balloon)
 		show_dialogue(yield(balloon, "actioned"), local_resource, extra_game_states)
 
+
+func console_start():
+	print("console start")
+
+
 func next_dialogue():
 	if dialogue_index == 1:
 		show_dialogue("q1-help1", dialogue)

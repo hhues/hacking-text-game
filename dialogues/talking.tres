@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 13
+resource_version = 14
 syntax_version = 2
 raw_text = "~ job_description
 do h_visible()
@@ -56,6 +56,7 @@ do q_visible()
 do h_visible()
 H: Fair enough. So, [PN], boot up the console and let’s get started.
 do h_visible()
+do console_start()
 
 ~ q1_help1
 do h_visible()
