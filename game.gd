@@ -1,6 +1,7 @@
 extends Node2D
 var dialogue_index = 0
 var dialogue = preload("res://dialogues/talking.tres")
+var q_index = 0
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -26,8 +27,60 @@ func show_dialogue(title: String, local_resource: DialogueResource = null, extra
 		show_dialogue(yield(balloon, "actioned"), local_resource, extra_game_states)
 
 
+func q_checker(answer):
+	if q_index == 0:
+		if answer == "Sole Foods" or answer == "sole foods":
+			return true
+	if q_index == 1:
+		if answer == "morning" or answer == "Morning":
+			return true
+	if q_index == 2:
+		if answer == "Petunias" or answer == "Petunia":
+			return true
+	if q_index == 3:
+		if answer == "Birthday Cake" or answer == "birthday cake" or answer == "cake" or answer == "Cake":
+			return true
+	else:
+		return false
+
+
+# when the console initially boots up
 func console_start():
 	print("console start")
+
+
+# console should call this function after receiving user input
+func console_input_check(answer):
+	q_checker(answer)
+
+
+# when the user gets a correct input
+func console_success():
+	print("console next")
+	console_next()
+
+
+# calls the next lines of text for the console
+func console_next():
+	print("next console line")
+	# function for next console text here
+
+
+# when the user gets a failure input
+func console_fail():
+	print("console fail")
+	# function for console failure here
+
+
+# when the console finishes its print that doesn't involve a user input
+func console_finished():
+	print("console finished")
+	next_dialogue()
+
+
+# when the user beats the game
+func console_shutdown():
+	print("console shutdown")
 
 
 func next_dialogue():
@@ -68,6 +121,7 @@ func show_phone():
 
 func show_magnifying_glass():
 	$MagnifyingGlass.visible = true
+	next_dialogue()
 
 func _on_MagnifyingGlass_pressed():
 	$Flowers.change_flowers()
