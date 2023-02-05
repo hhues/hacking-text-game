@@ -1,0 +1,649 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 3
+syntax_version = 2
+raw_text = "~ job_description
+H: Hey hey, good morning, ready for your first job? My name is H.
+Q: My name is Q, nice to meet you, [PN].
+H: We are HQ, ready to give you any instructions and aid. Things can be a bit difficult at times.
+H: You will be taking on all sorts of jobs from all sorts of different clients, how exciting! 
+H: But just for today, you are going to help us. Well, to be more precise, Q needs your help.
+Q: Look at you, being all smirky. 
+Q: But yeah. Today’s job is on my request. 
+Q: My grandma hasn’t used her computer for a while, and she couldn’t remember the password.
+Q: So your job is to gain root access to her computer and change the password.
+Q: You are going to activate the “forgot password” program and try to convince the computer that you are the user herself.
+H: And to convince the computer, you need to have as much knowledge as possible on the subject.
+H: After all, the program is designed to let the real user in by asking them questions only they can answer.
+H: But this is where we come in. We did a preliminary investigation and created a day-in-the-life report for Grandma. 
+H: You can answer those questions using the report.
+Q: Since her computer is pretty old, the program is very weak and easy to get past. There won’t be any difficult questions for today’s job.
+H: But Q, why don’t you just ask Grandma these questions yourself?
+Q: Ah… If we did that, it would take all day and we still won’t be done with question one.
+Q: Once you get her going, she will go on tangents forever. I just don’t want to deal with her these days.
+Q: I don’t have the time to chat. The yearly bonus is coming up and I need to take on as many clients as I can.
+Q: But I’m sure we can do this in a jiffy and we’ll be out of here.
+H: Fair enough. So, [PN], boot up the console and let’s get started.
+
+~ q1_help1
+H: Here you input “y” to tell the computer that you forgot the password.
+
+~ q1_help2
+H: This should be pretty easy. Skim through the report and find the answer.
+
+~ q3_help1
+Q: We know that she watered some flowers, but we don’t know what flowers they are…
+Q: No worries, you can investigate something further by highlighting parts of the document that you want our private investigators to look into.
+Q: Then click the phone icon at the bottom-right of the screen to start an investigation.
+H: Our P.I.s will bring whatever information they can find on this matter. 
+
+~ q3_help2
+Q: Now you have the picture of flowers, you can use the magnifying glass icon to do some research.
+H: Click on the flowers after selecting the magnifying glass to quickly look up what they are.
+
+~ q4_help1
+Q: We are close! You can do it. Remember the things we have taught you.
+H: And especially the things I’ve taught you.
+Q: What?
+
+~ ending
+Q: Nice work, [PN]. I think you are ready for this job. 
+Q: Kinda curious why she bought a cake though, and such a big and expensive one at that.
+Q: I do love strawberries though.
+H: Oh Q… 
+Q: What?
+Q: Hold on, a phone call.
+Q: Hello?
+Grandma: Hey Q! Am I bothering you?
+Q: No grandma, I just wrapped up work for the day.
+Grandma: That’s great. Just asking if you have any time tomorrow to swing by. 
+Grandma: I know you are busy and all, and you even managed to fix my computer despite all that.
+Q: Well you see…
+Grandma: And it’s your birthday tomorrow! I thought we could celebrate it together.
+Q: I forgot that my birthday is tomorrow…
+Grandma: It’s fine if you don’t make it. I know you are so busy nowadays, but it’s sad to see this cake go to waste.
+Grandma: You see, it was on sale for senior’s discount Wednesdays at Sole Foods. 
+Grandma: I know you love strawberries and all, so I bought it right away without much thinking.
+Q: I do love strawberries, Grandma. Um… I guess I’ll see you tomorrow.
+Grandma: That’s wonderful! 
+H: Hey Q’s Grandma, mind if a few of us come along as well?
+Grandma: Oh if it isn’t H! Sure thing, the more the merrier. I am going to put on some good cooking. All the food you like!
+Grandma: See you tomorrow then! I’ll be waiting.
+Q: …
+H: [PN], you better get ready for Grandma Q’s cooking. It truly is amazing.
+H: And happy birthday, Q.
+H: And thank you for playing this Game Jam submission!
+"
+errors = [  ]
+titles = {
+"ending": "45",
+"job_description": "1",
+"q1_help1": "24",
+"q1_help2": "27",
+"q3_help1": "30",
+"q3_help2": "36",
+"q4_help1": "40"
+}
+lines = {
+"0": {
+"next_id": "1",
+"text": "job_description",
+"type": "title"
+},
+"1": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "2",
+"replacements": [  ],
+"text": "Hey hey, good morning, ready for your first job? My name is H.",
+"translation_key": "Hey hey, good morning, ready for your first job? My name is H.",
+"type": "dialogue"
+},
+"10": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "11",
+"replacements": [  ],
+"text": "You are going to activate the “forgot password” program and try to convince the computer that you are the user herself.",
+"translation_key": "You are going to activate the “forgot password” program and try to convince the computer that you are the user herself.",
+"type": "dialogue"
+},
+"11": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "12",
+"replacements": [  ],
+"text": "And to convince the computer, you need to have as much knowledge as possible on the subject.",
+"translation_key": "And to convince the computer, you need to have as much knowledge as possible on the subject.",
+"type": "dialogue"
+},
+"12": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "13",
+"replacements": [  ],
+"text": "After all, the program is designed to let the real user in by asking them questions only they can answer.",
+"translation_key": "After all, the program is designed to let the real user in by asking them questions only they can answer.",
+"type": "dialogue"
+},
+"13": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "14",
+"replacements": [  ],
+"text": "But this is where we come in. We did a preliminary investigation and created a day-in-the-life report for Grandma.",
+"translation_key": "But this is where we come in. We did a preliminary investigation and created a day-in-the-life report for Grandma.",
+"type": "dialogue"
+},
+"14": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "15",
+"replacements": [  ],
+"text": "You can answer those questions using the report.",
+"translation_key": "You can answer those questions using the report.",
+"type": "dialogue"
+},
+"15": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "16",
+"replacements": [  ],
+"text": "Since her computer is pretty old, the program is very weak and easy to get past. There won’t be any difficult questions for today’s job.",
+"translation_key": "Since her computer is pretty old, the program is very weak and easy to get past. There won’t be any difficult questions for today’s job.",
+"type": "dialogue"
+},
+"16": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "17",
+"replacements": [  ],
+"text": "But Q, why don’t you just ask Grandma these questions yourself?",
+"translation_key": "But Q, why don’t you just ask Grandma these questions yourself?",
+"type": "dialogue"
+},
+"17": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "18",
+"replacements": [  ],
+"text": "Ah… If we did that, it would take all day and we still won’t be done with question one.",
+"translation_key": "Ah… If we did that, it would take all day and we still won’t be done with question one.",
+"type": "dialogue"
+},
+"18": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "19",
+"replacements": [  ],
+"text": "Once you get her going, she will go on tangents forever. I just don’t want to deal with her these days.",
+"translation_key": "Once you get her going, she will go on tangents forever. I just don’t want to deal with her these days.",
+"type": "dialogue"
+},
+"19": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "20",
+"replacements": [  ],
+"text": "I don’t have the time to chat. The yearly bonus is coming up and I need to take on as many clients as I can.",
+"translation_key": "I don’t have the time to chat. The yearly bonus is coming up and I need to take on as many clients as I can.",
+"type": "dialogue"
+},
+"2": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "3",
+"replacements": [  ],
+"text": "My name is Q, nice to meet you, [PN].",
+"translation_key": "My name is Q, nice to meet you, [PN].",
+"type": "dialogue"
+},
+"20": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "21",
+"replacements": [  ],
+"text": "But I’m sure we can do this in a jiffy and we’ll be out of here.",
+"translation_key": "But I’m sure we can do this in a jiffy and we’ll be out of here.",
+"type": "dialogue"
+},
+"21": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "Fair enough. So, [PN], boot up the console and let’s get started.",
+"translation_key": "Fair enough. So, [PN], boot up the console and let’s get started.",
+"type": "dialogue"
+},
+"23": {
+"next_id": "24",
+"text": "q1_help1",
+"type": "title"
+},
+"24": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "Here you input “y” to tell the computer that you forgot the password.",
+"translation_key": "Here you input “y” to tell the computer that you forgot the password.",
+"type": "dialogue"
+},
+"26": {
+"next_id": "27",
+"text": "q1_help2",
+"type": "title"
+},
+"27": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "This should be pretty easy. Skim through the report and find the answer.",
+"translation_key": "This should be pretty easy. Skim through the report and find the answer.",
+"type": "dialogue"
+},
+"29": {
+"next_id": "30",
+"text": "q3_help1",
+"type": "title"
+},
+"3": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "4",
+"replacements": [  ],
+"text": "We are HQ, ready to give you any instructions and aid. Things can be a bit difficult at times.",
+"translation_key": "We are HQ, ready to give you any instructions and aid. Things can be a bit difficult at times.",
+"type": "dialogue"
+},
+"30": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "31",
+"replacements": [  ],
+"text": "We know that she watered some flowers, but we don’t know what flowers they are…",
+"translation_key": "We know that she watered some flowers, but we don’t know what flowers they are…",
+"type": "dialogue"
+},
+"31": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "32",
+"replacements": [  ],
+"text": "No worries, you can investigate something further by highlighting parts of the document that you want our private investigators to look into.",
+"translation_key": "No worries, you can investigate something further by highlighting parts of the document that you want our private investigators to look into.",
+"type": "dialogue"
+},
+"32": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "33",
+"replacements": [  ],
+"text": "Then click the phone icon at the bottom-right of the screen to start an investigation.",
+"translation_key": "Then click the phone icon at the bottom-right of the screen to start an investigation.",
+"type": "dialogue"
+},
+"33": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "Our P.I.s will bring whatever information they can find on this matter.",
+"translation_key": "Our P.I.s will bring whatever information they can find on this matter.",
+"type": "dialogue"
+},
+"35": {
+"next_id": "36",
+"text": "q3_help2",
+"type": "title"
+},
+"36": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "37",
+"replacements": [  ],
+"text": "Now you have the picture of flowers, you can use the magnifying glass icon to do some research.",
+"translation_key": "Now you have the picture of flowers, you can use the magnifying glass icon to do some research.",
+"type": "dialogue"
+},
+"37": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "Click on the flowers after selecting the magnifying glass to quickly look up what they are.",
+"translation_key": "Click on the flowers after selecting the magnifying glass to quickly look up what they are.",
+"type": "dialogue"
+},
+"39": {
+"next_id": "40",
+"text": "q4_help1",
+"type": "title"
+},
+"4": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "5",
+"replacements": [  ],
+"text": "You will be taking on all sorts of jobs from all sorts of different clients, how exciting!",
+"translation_key": "You will be taking on all sorts of jobs from all sorts of different clients, how exciting!",
+"type": "dialogue"
+},
+"40": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "41",
+"replacements": [  ],
+"text": "We are close! You can do it. Remember the things we have taught you.",
+"translation_key": "We are close! You can do it. Remember the things we have taught you.",
+"type": "dialogue"
+},
+"41": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "42",
+"replacements": [  ],
+"text": "And especially the things I’ve taught you.",
+"translation_key": "And especially the things I’ve taught you.",
+"type": "dialogue"
+},
+"42": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "What?",
+"translation_key": "What?",
+"type": "dialogue"
+},
+"44": {
+"next_id": "45",
+"text": "ending",
+"type": "title"
+},
+"45": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "46",
+"replacements": [  ],
+"text": "Nice work, [PN]. I think you are ready for this job.",
+"translation_key": "Nice work, [PN]. I think you are ready for this job.",
+"type": "dialogue"
+},
+"46": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "47",
+"replacements": [  ],
+"text": "Kinda curious why she bought a cake though, and such a big and expensive one at that.",
+"translation_key": "Kinda curious why she bought a cake though, and such a big and expensive one at that.",
+"type": "dialogue"
+},
+"47": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "48",
+"replacements": [  ],
+"text": "I do love strawberries though.",
+"translation_key": "I do love strawberries though.",
+"type": "dialogue"
+},
+"48": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "49",
+"replacements": [  ],
+"text": "Oh Q…",
+"translation_key": "Oh Q…",
+"type": "dialogue"
+},
+"49": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "50",
+"replacements": [  ],
+"text": "What?",
+"translation_key": "What?",
+"type": "dialogue"
+},
+"5": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "6",
+"replacements": [  ],
+"text": "But just for today, you are going to help us. Well, to be more precise, Q needs your help.",
+"translation_key": "But just for today, you are going to help us. Well, to be more precise, Q needs your help.",
+"type": "dialogue"
+},
+"50": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "51",
+"replacements": [  ],
+"text": "Hold on, a phone call.",
+"translation_key": "Hold on, a phone call.",
+"type": "dialogue"
+},
+"51": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "52",
+"replacements": [  ],
+"text": "Hello?",
+"translation_key": "Hello?",
+"type": "dialogue"
+},
+"52": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "53",
+"replacements": [  ],
+"text": "Hey Q! Am I bothering you?",
+"translation_key": "Hey Q! Am I bothering you?",
+"type": "dialogue"
+},
+"53": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "54",
+"replacements": [  ],
+"text": "No grandma, I just wrapped up work for the day.",
+"translation_key": "No grandma, I just wrapped up work for the day.",
+"type": "dialogue"
+},
+"54": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "55",
+"replacements": [  ],
+"text": "That’s great. Just asking if you have any time tomorrow to swing by.",
+"translation_key": "That’s great. Just asking if you have any time tomorrow to swing by.",
+"type": "dialogue"
+},
+"55": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "56",
+"replacements": [  ],
+"text": "I know you are busy and all, and you even managed to fix my computer despite all that.",
+"translation_key": "I know you are busy and all, and you even managed to fix my computer despite all that.",
+"type": "dialogue"
+},
+"56": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "57",
+"replacements": [  ],
+"text": "Well you see…",
+"translation_key": "Well you see…",
+"type": "dialogue"
+},
+"57": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "58",
+"replacements": [  ],
+"text": "And it’s your birthday tomorrow! I thought we could celebrate it together.",
+"translation_key": "And it’s your birthday tomorrow! I thought we could celebrate it together.",
+"type": "dialogue"
+},
+"58": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "59",
+"replacements": [  ],
+"text": "I forgot that my birthday is tomorrow…",
+"translation_key": "I forgot that my birthday is tomorrow…",
+"type": "dialogue"
+},
+"59": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "60",
+"replacements": [  ],
+"text": "It’s fine if you don’t make it. I know you are so busy nowadays, but it’s sad to see this cake go to waste.",
+"translation_key": "It’s fine if you don’t make it. I know you are so busy nowadays, but it’s sad to see this cake go to waste.",
+"type": "dialogue"
+},
+"6": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "7",
+"replacements": [  ],
+"text": "Look at you, being all smirky.",
+"translation_key": "Look at you, being all smirky.",
+"type": "dialogue"
+},
+"60": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "61",
+"replacements": [  ],
+"text": "You see, it was on sale for senior’s discount Wednesdays at Sole Foods.",
+"translation_key": "You see, it was on sale for senior’s discount Wednesdays at Sole Foods.",
+"type": "dialogue"
+},
+"61": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "62",
+"replacements": [  ],
+"text": "I know you love strawberries and all, so I bought it right away without much thinking.",
+"translation_key": "I know you love strawberries and all, so I bought it right away without much thinking.",
+"type": "dialogue"
+},
+"62": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "63",
+"replacements": [  ],
+"text": "I do love strawberries, Grandma. Um… I guess I’ll see you tomorrow.",
+"translation_key": "I do love strawberries, Grandma. Um… I guess I’ll see you tomorrow.",
+"type": "dialogue"
+},
+"63": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "64",
+"replacements": [  ],
+"text": "That’s wonderful!",
+"translation_key": "That’s wonderful!",
+"type": "dialogue"
+},
+"64": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "65",
+"replacements": [  ],
+"text": "Hey Q’s Grandma, mind if a few of us come along as well?",
+"translation_key": "Hey Q’s Grandma, mind if a few of us come along as well?",
+"type": "dialogue"
+},
+"65": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "66",
+"replacements": [  ],
+"text": "Oh if it isn’t H! Sure thing, the more the merrier. I am going to put on some good cooking. All the food you like!",
+"translation_key": "Oh if it isn’t H! Sure thing, the more the merrier. I am going to put on some good cooking. All the food you like!",
+"type": "dialogue"
+},
+"66": {
+"character": "Grandma",
+"character_replacements": [  ],
+"next_id": "67",
+"replacements": [  ],
+"text": "See you tomorrow then! I’ll be waiting.",
+"translation_key": "See you tomorrow then! I’ll be waiting.",
+"type": "dialogue"
+},
+"67": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "68",
+"replacements": [  ],
+"text": "…",
+"translation_key": "…",
+"type": "dialogue"
+},
+"68": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "69",
+"replacements": [  ],
+"text": "[PN], you better get ready for Grandma Q’s cooking. It truly is amazing.",
+"translation_key": "[PN], you better get ready for Grandma Q’s cooking. It truly is amazing.",
+"type": "dialogue"
+},
+"69": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "70",
+"replacements": [  ],
+"text": "And happy birthday, Q.",
+"translation_key": "And happy birthday, Q.",
+"type": "dialogue"
+},
+"7": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "8",
+"replacements": [  ],
+"text": "But yeah. Today’s job is on my request.",
+"translation_key": "But yeah. Today’s job is on my request.",
+"type": "dialogue"
+},
+"70": {
+"character": "H",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "And thank you for playing this Game Jam submission!",
+"translation_key": "And thank you for playing this Game Jam submission!",
+"type": "dialogue"
+},
+"8": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "9",
+"replacements": [  ],
+"text": "My grandma hasn’t used her computer for a while, and she couldn’t remember the password.",
+"translation_key": "My grandma hasn’t used her computer for a while, and she couldn’t remember the password.",
+"type": "dialogue"
+},
+"9": {
+"character": "Q",
+"character_replacements": [  ],
+"next_id": "10",
+"replacements": [  ],
+"text": "So your job is to gain root access to her computer and change the password.",
+"translation_key": "So your job is to gain root access to her computer and change the password.",
+"type": "dialogue"
+}
+}
