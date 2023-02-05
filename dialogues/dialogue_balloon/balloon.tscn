@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" type="Script" id=1]
+[ext_resource path="res://dialogues/dialogue_balloon/balloon.gd" type="Script" id=1]
 [ext_resource path="res://addons/dialogue_manager/example_balloon/font_normal.tres" type="DynamicFont" id=3]
 [ext_resource path="res://addons/dialogue_manager/example_balloon/font_italics.tres" type="DynamicFont" id=5]
 [ext_resource path="res://addons/dialogue_manager/example_balloon/font_bold.tres" type="DynamicFont" id=6]
