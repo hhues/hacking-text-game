@@ -110,18 +110,18 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -1022.0
 margin_right = -1152.0
-margin_bottom = -566.0
+margin_bottom = -538.0
 size_flags_vertical = 3
 
 [node name="Panel" type="Panel" parent="Rows/Textbox/TextboxContainer"]
 visible = false
 margin_right = 768.0
-margin_bottom = 456.0
+margin_bottom = 484.0
 custom_styles/panel = SubResource( 4 )
 
 [node name="MarginContainer" type="MarginContainer" parent="Rows/Textbox/TextboxContainer"]
 margin_right = 768.0
-margin_bottom = 456.0
+margin_bottom = 484.0
 custom_constants/margin_right = 8
 custom_constants/margin_top = 4
 custom_constants/margin_left = 8
@@ -132,23 +132,37 @@ visible = false
 margin_left = 8.0
 margin_top = 4.0
 margin_right = 760.0
-margin_bottom = 448.0
+margin_bottom = 476.0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Rows/Textbox/TextboxContainer/MarginContainer"]
+[node name="HBoxContainer" type="VBoxContainer" parent="Rows/Textbox/TextboxContainer/MarginContainer"]
 margin_left = 8.0
 margin_top = 4.0
 margin_right = 760.0
-margin_bottom = 448.0
+margin_bottom = 476.0
 
 [node name="Label" type="Label" parent="Rows/Textbox/TextboxContainer/MarginContainer/HBoxContainer"]
 margin_right = 752.0
-margin_bottom = 444.0
+margin_bottom = 348.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 1 )
 text = "Placeholder text! The quick brown sddddd"
 autowrap = true
 clip_text = true
+
+[node name="TextEdit" type="TextEdit" parent="Rows/Textbox/TextboxContainer/MarginContainer/HBoxContainer"]
+margin_top = 352.0
+margin_right = 752.0
+margin_bottom = 472.0
+rect_min_size = Vector2( 0, 120 )
+custom_colors/caret_color = Color( 1, 1, 1, 1 )
+custom_colors/background_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Inputt
+est123"
+syntax_highlighting = true
+caret_block_mode = true
+caret_blink = true
 
 [node name="Tween" type="Tween" parent="Rows/Textbox"]
 

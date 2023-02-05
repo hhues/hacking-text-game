@@ -3,6 +3,7 @@ extends CanvasLayer
 const CHAR_READ_RATE = 0.025
 
 onready var label = $TextboxContainer/MarginContainer/HBoxContainer/Label
+onready var textedit = $TextboxContainer/MarginContainer/HBoxContainer/TextEdit
 
 enum State {
 	READY,
@@ -21,6 +22,8 @@ func _ready():
 	queue_text("Thanks for watching!")
 
 func _process(delta):
+	var sizeOfLabel = label.rect_size.y
+	textedit.rect_position.y = -300 + sizeOfLabel
 	match current_state:
 		State.READY:
 			if !text_queue.empty():
@@ -33,7 +36,8 @@ func _process(delta):
 		State.FINISHED:
 			if Input.is_action_just_pressed("ui_accept"):
 				# change_state(State.READY)
-				pass
+				sizeOfLabel = label.rect_size.y
+				textedit.rect_position.y = -300 + sizeOfLabel
 
 func queue_text(next_text):
 	text_queue.push_back(next_text)
