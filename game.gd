@@ -63,7 +63,7 @@ func console_success():
 # calls the next lines of text for the console
 func console_next():
 	print("next console line")
-	# function for next console text here
+	$Background.console_next()
 
 
 # when the user gets a failure input

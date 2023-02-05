@@ -64,10 +64,7 @@ func _on_Tween_tween_completed(object, key):
 	change_state(State.FINISHED)
 	print("test")
 	print(text_queue)
-	if len(text_queue) == 7:
-		console_next()
-	else:
-		console_finished()
+	console_finished()
 
 func console_start():
 	current_state = State.READY
