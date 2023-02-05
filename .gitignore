@@ -2,6 +2,8 @@
 .import/
 export.cfg
 export_presets.cfg
+html_export/
+win_export/
 
 # Imported translations (automatically generated from CSV files)
 *.translation
