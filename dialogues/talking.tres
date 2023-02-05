@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 3
+resource_version = 4
 syntax_version = 2
 raw_text = "~ job_description
 H: Hey hey, good morning, ready for your first job? My name is H.
